@@ -45,6 +45,13 @@ int month(time_t t);   // the month for the given time
 int year();            // the full four digit year: (2009, 2010 etc) 
 int year(time_t t);    // the year for the given time
 
+String ToDateTimeStr();          // the DateTime string now
+String ToDateTimeStr(time_t t);  // the DateTime string for the given time
+String DateStr();                // the Date string now
+String DateStr(time_t t);        // the Date string for the given time
+String TimeStr();                // the Time string now
+String TimeStr(time_t t);        // the Time string for the given time
+
 void breakTime(time_t time, stElements_t &st);  // break time_t into elements
 
 #endif // __cplusplus
