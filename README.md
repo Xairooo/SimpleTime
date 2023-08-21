@@ -14,6 +14,13 @@ The functions available in the library include:
     month(t);               // the month for the given time t 
     year(t);                // the year for the given time t  
 
+    String ToDateTimeStr();          // the DateTime string now
+    String ToDateTimeStr(time_t t);  // the DateTime string for the given time
+    String DateStr();                // the Date string now
+    String DateStr(time_t t);        // the Date string for the given time
+    String TimeStr();                // the Time string now
+    String TimeStr(time_t t);        // the Time string for the given time
+
 **Calling a function without a time object, eg `hour()`, will return the current time** 
 
 No other fancy macros are added to keep it, as the name suggests, simple.
