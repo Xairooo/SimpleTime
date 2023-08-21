@@ -1,6 +1,6 @@
   {
   "name": "SimpleTime",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "keywords": "Time, date, hour, minute, second, day, week, month, year",
   "description": "Simple time libray to convert unix timestamp",
   "repository":
@@ -13,13 +13,18 @@
     {
       "name": "Pim Rutgers",
       "email": "pim@physee.eu",
-      "url": "http://github.com/Xairooo",
+      "url": "https://github.com/physee",
       "maintainer": true
+    },
+    {
+      "name": "Xairo",
+      "email": "xairooo@gmail.com",
+      "url": "http://github.com/Xairooo"
     }
   ],
   "frameworks": "arduino",
   "platforms": [
     "espressif8266",
     "atmelavr"
-  ],
+  ]
 }

@@ -105,7 +105,7 @@ int month(){
 
 int month(time_t t) {  // the month for the given time
   refreshCache(t);
-  return st.Month;
+  return (int)st.Month;
 }
 
 int year() {  // 
@@ -115,6 +115,29 @@ int year() {  //
 int year(time_t t) { // the year for the given time
   refreshCache(t);
   return st.Year;
+}
+
+String ToDateTimeStr(){
+  return DateStr()+ " " + TimeStr();
+}
+
+String ToDateTimeStr(time_t t){
+  return DateStr(t)+ " " + TimeStr(t);
+}
+
+String DateStr(){
+  return year()+"."+month()+String('.')+day();
+}           
+String DateStr(time_t t){
+  return year(t)+"."+month(t)+String('.')+day(t);
+}
+
+String TimeStr(){
+  return hour()+":"+minute()+String(':')+second();
+}
+
+String TimeStr(time_t t){
+  return hour(t)+":"+minute(t)+String(':')+second(t);
 }
 
 void breakTime(time_t timeInput, stElements_t &st) {
